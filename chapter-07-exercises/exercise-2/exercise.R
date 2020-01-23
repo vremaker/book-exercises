@@ -20,7 +20,7 @@ eleventh <- all_numbers[11];
 some_numbers <- all_numbers[2:11]
 
 # Create a vector `even` that holds the even numbers from 1 to 100
-
+even<- c(2,4,6,8)
 
 # Using the `all()` function and `%%` (modulo) operator, confirm that all of the
 # numbers in your `even` vector are even
@@ -35,6 +35,7 @@ prefix <- phone_number[1:3]
 
 # Create a vector `small` that has the values of `phone_numbers` that are 
 # less than or equal to 5
+
 
 # Create a vector `large` that has the values of `phone_numbers` that are 
 # strictly greater than 5
