@@ -2,24 +2,25 @@
 
 # Install and load the `ggplot2` package
 # You will also want to load `dplyr`
-
-
+install.packages("ggplot2")
+library("ggplot2")
+library("dplyr")
 # For this exercise you'll be working with the `diamonds` data set included in 
 # the ggplot2 library
 # Use `?diamonds` to get more information about this data set (including the 
 # column descriptions. Also check the _column names_ and the _number of rows_ 
 # in the data set
-
+?diamonds
 
 # This data set has A LOT of rows. To make things a bit more readable, 
 # use dplyr's `sample_n()` function to get a random 1000 rows from the data set
 # Store this sample in a variable `diamonds_sample`
-
+bob <- sample_n(diamonds, 100)
 
 # Start by making a new `ggplot` with the `diamonds_sample` as the data (no 
 # geometry yet)
 # What do you see? (What did you expect?)
-
+ggplot(bob)
 
 # Draw a scatter plot (with point geometry) with for the `diamonds_sample` set, 
 # with the `carat` mapped to the x-position and `price` mapped to the y-position.

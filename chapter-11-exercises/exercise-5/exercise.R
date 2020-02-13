@@ -41,9 +41,8 @@ flights %>%
 # Which city was flown to with the highest average speed?
 
 flights %>% 
-  group_by(dest) %>%
+  group_by(dest)%>%
   summarize(
-    avg_speed = mean(distance/air_time, na.rm = TRUE)
-  ) %>%
-  filter(avg_speed == max(avg_speed, na.rm = TRUE))
+    count = 
+  ) 
   
